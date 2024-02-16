@@ -1,0 +1,142 @@
+:root {
+    --sedan: #E28625;
+    --suv: #006971;
+    --luxury: #004140;
+    --white: #fff;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+/* Layout principal */
+.padre {
+    height: 500px;
+    width: 920px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* Layout SEDAN */
+.sedan {
+    background-color: var(--sedan);
+    grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+    padding: 48px;
+}
+
+/* Layout SUV */
+.suv {
+    background-color: var(--suv);
+    grid-column: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+
+}
+
+/* Layout LUXURY */
+.lux {
+    background-color: var(--luxury);
+    grid-column: 3 / 3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+    padding: 48px;
+
+}
+
+/* Estilos de los textos */
+.titulo {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--white);
+    font-size: 40px;
+    margin-top: 35px;
+}
+
+.parrafo {
+    margin-top: 25px;
+    margin-bottom: 83px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.75;
+    width: 212px;
+    line-height: 25px;
+}
+
+/* Estilos de los botones */
+
+.sedan button {
+    background-color: var(--white);
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border:none;
+    color: var(--sedan);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sedan button:hover {
+    background-color: var(--sedan);
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: solid 1px var(--white);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.suv button {
+    background-color: var(--white);
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: none;
+    color: var(--suv);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.suv button:hover {
+    background-color: var(--suv);
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: solid 1px var(--white);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.lux button {
+    background-color: var(--white);
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: none;
+    color: var(--luxury);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.lux button:hover {
+    background-color: var(--luxury);
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: solid 1px var(--white);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+}
