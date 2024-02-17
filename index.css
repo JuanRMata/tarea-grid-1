@@ -8,12 +8,19 @@
 .principal {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
     height: 100%;
     width: 100%;
 }
 
-
+@media  (min-width: 768px) {
+    .principal {
+        height: 100%;
+        width: 100%;
+        margin-top: 65px;
+    }
+    
+}
 
 /* Layout principal */
 
@@ -26,7 +33,6 @@
         grid-template-columns: repeat(3 , 1fr);
         align-items: center;
         justify-content: center;
-        margin-top: 171px;
     }
 }
 
