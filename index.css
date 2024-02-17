@@ -7,48 +7,99 @@
 
 .principal {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
+
+
+
 /* Layout principal */
-.padre {
-    height: 500px;
-    width: 920px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+
+@media (min-width: 768px){
+    .padre {
+        height: 500px;
+        width: 920px;
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        align-items: center;
+        justify-content: center;
+        margin-top: 171px;
+    }
 }
+
 /* Layout SEDAN */
 .sedan {
     background-color: var(--sedan);
-    grid-column: 1 / 1;
     display: flex;
     flex-direction: column;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
     padding: 48px;
+    height: 442px;
+    width: 327px;
+}
+
+@media (min-width: 768px){
+    .sedan {
+        background-color: var(--sedan);
+        grid-column: 1 / 1;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 0 0 10px;
+        padding: 48px;
+        height: 500px;
+        width: 307px;
+    }
 }
 
 /* Layout SUV */
 .suv {
     background-color: var(--suv);
-    grid-column: 2 / 2;
     display: flex;
     flex-direction: column;
     padding: 48px;
+    height: 442px;
+    width: 327px;
+}
 
+@media (min-width: 768px){
+    .suv {
+        background-color: var(--suv);
+        grid-column: 2 / 2;
+        display: flex;
+        flex-direction: column;
+        padding: 48px;
+        height: 500px;
+        width: 307px;
+    }
 }
 
 /* Layout LUXURY */
 .lux {
     background-color: var(--luxury);
-    grid-column: 3 / 3;
     display: flex;
     flex-direction: column;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 0 10px 10px;
     padding: 48px;
-
+    height: 442px;
+    width: 327px;
 }
+
+@media (min-width: 768px){
+    .lux {
+        background-color: var(--luxury);
+        grid-column: 3 / 3;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 10px 10px 0;
+        padding: 48px;
+        height: 500px;
+        width: 307px;
+    }
+}
+
 
 /* Estilos de los textos */
 .titulo {
